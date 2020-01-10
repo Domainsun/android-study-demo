@@ -1,9 +1,12 @@
-package com.domain.study.animation;
+package com.domain.study.animation.tween;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.domain.study.animation.R;
 import com.domain.study.animation.base.BaseActivity;
 import com.domain.study.animation.tween.TweenAlphaActivity;
 import com.domain.study.animation.tween.TweenCombinationActivity;
@@ -25,6 +28,11 @@ public class TweenActivity extends BaseActivity {
     @BindView(R.id.btn_alpha)
     Button btnAlpha;
 
+
+    public static void start(Context context) {
+        Intent starter = new Intent(context, TweenActivity.class);
+        context.startActivity(starter);
+    }
     @Override
     protected int setLayoutId() {
         return R.layout.activity_tween;

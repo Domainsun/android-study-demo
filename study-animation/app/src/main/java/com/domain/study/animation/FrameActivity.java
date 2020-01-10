@@ -1,14 +1,13 @@
 package com.domain.study.animation;
 
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
-import android.os.Bundle;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import com.domain.study.animation.base.BaseActivity;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 
@@ -19,11 +18,9 @@ import butterknife.OnClick;
  *
  *
  *
- *
- *
  */
 
-public class MainActivity extends BaseActivity {
+public class FrameActivity extends BaseActivity {
 
 
     @BindView(R.id.iv)
@@ -32,9 +29,14 @@ public class MainActivity extends BaseActivity {
     AnimationDrawable animationDrawable = null;
     boolean isStart = false;
 
+    public static void start(Context context) {
+        Intent starter = new Intent(context, FrameActivity.class);
+        context.startActivity(starter);
+    }
+
     @Override
     protected int setLayoutId() {
-        return R.layout.activity_main;
+        return R.layout.activity_frame;
     }
 
     @Override

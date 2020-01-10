@@ -22,6 +22,12 @@
         <activity android:name=".tween.TweenRotateActivity"></activity>
         <activity android:name=".tween.TweenAlphaActivity"></activity>
         <activity android:name=".tween.TweenCombinationActivity"></activity>
+<!--        <activity android:name=".PropertyActivity" />-->
+        <activity android:name=".property.ValueAnimatorActivity" />
+        <activity android:name=".property.ObjectAnimatorActivity" />
+        <activity android:name=".property.PropertyActivity"></activity>
+        <activity android:name=".tween.TweenActivity"></activity>
+        <activity android:name=".FrameActivity"></activity>
     </application>
 
 </manifest>

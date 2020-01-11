@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <Button
+        android:id="@+id/btn_value_animator"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="valueAnimator"
+        android:textAllCaps="false"></Button>
+
+    <Button
+        android:id="@+id/btn_object_animator"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="objectAnimator"
+        android:textAllCaps="false"></Button>
+
+
+</LinearLayout>

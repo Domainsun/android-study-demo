@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:valueFrom="0"
+    android:valueTo="100"
+    android:valueType="intType">
+
+
+<!-- 对应 ValueAnimator 中的java代码  ValueAnimator valueAnimator = ValueAnimator.ofInt(0,100); -->
+
+
+</animator>
